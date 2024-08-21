@@ -1,0 +1,75 @@
+@import "../../styles/index.scss";
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: var(--theme-black-background);
+    color: var(--theme-white-background);
+    box-shadow: 0 1px 8px 2px rgba(180, 46, 46, 0.403);
+
+    .full-header {
+        display: grid;
+        grid-template-columns: 100px 250px 1fr 115px;
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .accessories {
+            display: flex;
+            gap: 50px;
+
+            .header-menu {
+                position: relative;
+
+                &:hover {
+                    .header-menu-border-bottom {
+                        width: 100%
+                    }
+                }
+
+                a {
+                    display: block;
+                    font-size: 18px;
+                    color: var(--theme-white-text);
+                }
+
+                .header-menu-border-bottom {
+                    border-bottom: 1px solid var(--theme-white-background);
+                    position: absolute;
+                    width: 0;
+                    transition: .49s ease-in-out;
+                    display: block;
+                    overflow: hidden;
+                }
+
+            }
+        }
+
+        .header-searchbar {
+            input {
+                width: 100%;
+                border-radius: 50px;
+                padding: 5px;
+                padding-left: 15px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .add-to-cart {
+            display: flex;
+            gap: 20px;
+
+            a {
+                .icon {
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
