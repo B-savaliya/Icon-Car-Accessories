@@ -6,9 +6,10 @@ function Footer() {
   return (
     <footer>
       <div className='container'>
-        <div className='footer-logo-icon'>
+        
+        {/* <div className='footer-logo-icon'>
           <img src={footerLogoImg} />
-        </div>
+        </div> */}
       </div>
     </footer>
   )
