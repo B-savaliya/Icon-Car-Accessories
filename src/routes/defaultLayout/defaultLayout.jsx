@@ -1,16 +1,18 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Header from '../../common/header'
-import Footer from '../../common/footer'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Header from "../../common/header";
+import Footer from "../../common/footer";
+import BackToTop from "../../common/backToTop";
 
 function DefaultLayout() {
-    return (
-        <div>
-            <Header />
-            <Outlet />
-            <Footer />
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <Outlet />
+      <Footer />
+      <BackToTop />
+    </div>
+  );
 }
 
-export default DefaultLayout
+export default DefaultLayout;
