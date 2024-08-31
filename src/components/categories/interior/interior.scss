@@ -1,0 +1,58 @@
+@import "../../../styles/index.scss";
+
+.interior-section {
+    padding: 50px 0;
+    .interior-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        .card{
+            padding: 10px;
+            border: 1px solid var(--theme-white-background);
+            border-radius: 10px;
+            box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .card-img{
+                width: 400px;
+                height: 400px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                }
+            }
+            .card-detailes{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                .card-title{
+                    p{
+                        text-align: center;
+                    }
+                }
+                .product-buy{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    button{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .wishlist{
+                        cursor: pointer;
+                        .addToWishlist{
+                            display: block;
+                            width: 21px;
+                            height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

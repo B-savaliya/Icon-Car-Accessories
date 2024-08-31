@@ -1,0 +1,14 @@
+@import "../styles/index.scss";
+
+.cart{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 20px;
+    grid-gap: 20px;
+    .cart-item{
+        border: 1px solid var(--theme-white-background);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+}

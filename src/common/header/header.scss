@@ -29,6 +29,12 @@ header {
     justify-content: center;
     align-items: center;
     height: 100%;
+    @media (max-width:1465px) {
+        gap: 40px;
+    }
+    @media (max-width:1299px) {
+        gap: 30px;
+    }
     @media (max-width: 768px) {
       display: flex;
       justify-content: space-between;
@@ -42,6 +48,9 @@ header {
     .accessories {
       display: flex;
       gap: 50px;
+      @media (max-width:1374px) {
+        gap: 35px;
+      }
       @media (max-width: 768px) {
         display: none;
       }
@@ -53,10 +62,10 @@ header {
           align-items: center;
           gap: 5px;
           .header-menu-down-icon {
-              display: block;
-              width: 15px;
-              height: 15px;
-              transition: .3s ease-in-out;
+            display: block;
+            width: 15px;
+            height: 15px;
+            transition: 0.3s ease-in-out;
           }
         }
 
@@ -88,7 +97,7 @@ header {
             height: 00%;
             display: none;
             padding-top: 10px;
-            transition: .3s ease-in-out;
+            transition: 0.3s ease-in-out;
             a {
               border: 1px solid var(--theme-white-background);
               background-color: var(--theme-black-background);
