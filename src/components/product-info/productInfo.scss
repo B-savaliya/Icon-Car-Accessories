@@ -1,0 +1,35 @@
+@import "../../styles/index.scss";
+
+.product-info-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.product-image img {
+  max-width: 300px;
+  height: auto;
+}
+
+.product-details {
+  max-width: 600px;
+}
+
+.add-to-cart-button,
+.add-to-wishlist-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+}

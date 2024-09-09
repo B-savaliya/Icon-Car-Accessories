@@ -1,11 +1,20 @@
-@import '../../../styles/index.scss';
+@import "../../../styles/index.scss";
 
 .herobanner-img {
-    img{
-
-        width: 100%;
-        height: 300px;
-        background-image: url('../../../assets/images/herobanner_category_bg.jpg');
-        background-size: cover;
-    }
+  position: relative;
+  img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+  }
 }

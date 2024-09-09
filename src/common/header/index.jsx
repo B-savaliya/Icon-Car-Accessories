@@ -29,12 +29,7 @@ function Header() {
   };
   return (
     <>
-      <div className="topbar">
-        <Marquee>
-          <span>Welcome To Icon Car Accessories. Shop With Us Online</span>
-          <span>Equip your car, conquer the streets</span>
-        </Marquee>
-      </div>
+      
       <header>
         <div className={`sidenav ${isNavOpen ? "open" : ""}`}>
           <div className="closebtn" onClick={closeNav}>

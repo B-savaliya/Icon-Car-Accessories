@@ -3,27 +3,35 @@ import DefaultLayout from "./defaultLayout/defaultLayout";
 import Home from "../components/home";
 import Category from "./category/category";
 import SignUp from "../components/form/signup";
+import DelayLoader from "../common/loader/delayLoader/delayLoader";
 
 const router = createBrowserRouter([
-
-    {
-        path: "/signup",
-        element: <SignUp />,
-    },
-    {
+  {
+    path: "/signup",
+    element: (
+      <DelayLoader>
+        <SignUp />
+      </DelayLoader>
+    ),
+  },
+  {
+    path: "/",
+    element: <DefaultLayout />,
+    children: [
+      {
         path: "/",
-        element: <DefaultLayout />,
-        children: [
-            {
-                path: "/",
-                element: <Home />,
-            },
-            {
-                path: "/:category",
-                element: <Category />
-            }
-        ],
-    },
-])
+        element: (
+          <DelayLoader>
+            <Home />
+          </DelayLoader>
+        ),
+      },
+      {
+        path: "/:category",
+        element: <Category />,
+      },
+    ],
+  },
+]);
 
-export default router
+export default router;
