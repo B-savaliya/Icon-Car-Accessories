@@ -94,12 +94,12 @@ function Header() {
             </div>
             <div>
               <div className="add-to-cart">
-                <a>
+                <Link to={""}>
                   <CiHeart className="icon" />
-                </a>
-                <a>
+                </Link>
+                <Link to={"/Cart"}>
                   <BsCartPlus className="icon" />
-                </a>
+                </Link>
                 <Link to={"/signup"}>
                   <CiUser className="icon" />
                 </Link>

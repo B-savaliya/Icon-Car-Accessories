@@ -9,7 +9,7 @@ export default function Loader() {
           <img src={logo} alt="Company Logo" className="logo" />
         </div>
       </div>
-      {/* <span style={{display:"block"}} class="loader"></span> */}
+      
     </>
   );
 }

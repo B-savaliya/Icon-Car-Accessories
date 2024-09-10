@@ -1,0 +1,44 @@
+@import "../../styles/index.scss";
+
+.categories-detailes-main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+    .categories-detailes-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .categories-info {
+        h2 {
+            font-size: 45px;
+            line-height: 46px;
+        }
+
+        .categories-detailes {
+            p {
+                font-size: 25px;
+                line-height: 33px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .categories-detailes-btn {
+            button {
+                padding: 5px 15px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}

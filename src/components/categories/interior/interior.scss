@@ -35,22 +35,22 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        background-color: var(--theme-black-background);
-        color: var(--theme-white-background);
+        background-color: var(--theme-white-background);
+        color: var(--theme-black-background);
         border-radius: 8px;
         padding: 10px;
         .card-title {
           p {
             text-align: center;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
+            -webkit-line-clamp: 2;
             display: -webkit-box;
             overflow: hidden;
           }
         }
         .product-price {
           p {
-            color: var(--theme-light-cyan-text);
+            color: var(--theme-black-background);
           }
         }
         .product-buy {
