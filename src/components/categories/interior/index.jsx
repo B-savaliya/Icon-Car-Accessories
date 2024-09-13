@@ -36,7 +36,7 @@ export default Interior;
       <button>add to cart</button>
     </div>
     <div className="wishlist">
-      <CiHeart className="addToWishlist" />
+      <FaRegHeart className="addToWishlist" />
     </div>
   </div>
 </div> */

@@ -43,7 +43,7 @@ const categoryApi = [
         category: "Interior",
         path: "Interior",
         product: [
-            { productcategory: "Seat Covers", path: "Seat-Covers" },
+            { productcategory: "Seat Covers", path: "/Seat-Covers" },
             { productcategory: "Floor Mats", path: "Floor-Mats" },
             { productcategory: "Steering Wheel Covers", path: "Steering-Wheel-Covers" },
         ],

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./header.scss";
-import headerLogoImg from "../../assets/logo/header-logo.jpg";
+import headerLogoImg from "../../assets/logo/header-logo-removebg-preview.png";
 import categoryApi from "../../categoryApi/categoryApi";
 import { Link } from "react-router-dom";
 import { BsCartPlus } from "react-icons/bs";
 import { CiHeart, CiUser } from "react-icons/ci";
 import Marquee from "react-fast-marquee";
 import { FaCaretDown } from "react-icons/fa";
-import { IoMenuOutline } from "react-icons/io5";
+import { IoMenuOutline, IoSearch } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 
 const category = categoryApi;
@@ -66,6 +66,7 @@ function Header() {
               </Link>
             </div>
             <div className="header-searchbar">
+              <IoSearch className="search-icon" />
               <input type="text" placeholder="Search" />
             </div>
             <div className="accessories">
@@ -92,7 +93,7 @@ function Header() {
                 );
               })}
             </div>
-            <div>
+            <div className="header-user-section">
               <div className="add-to-cart">
                 <Link to={""}>
                   <CiHeart className="icon" />

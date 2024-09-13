@@ -1,6 +1,6 @@
 import React from "react";
 import "./loader.scss";
-import logo from "../../assets/logo/header-logo.jpg";
+import logo from "../../assets/logo/header-logo-removebg-preview.png";
 export default function Loader() {
   return (
     <>

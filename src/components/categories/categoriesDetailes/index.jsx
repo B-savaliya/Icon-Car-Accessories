@@ -23,7 +23,7 @@ function CategoriesDetailes() {
         localStorage.setItem("cartData",JSON.stringify(setData))
     }
     return (
-        <div>
+        <div className='categories-sec'>
             <div className='categories-container'>
                 <div className='back-btn'>
                     <button onClick={handleGoBack}>←</button>

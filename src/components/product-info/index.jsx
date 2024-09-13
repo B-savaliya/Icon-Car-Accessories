@@ -5,25 +5,25 @@ import "./productInfo.scss";
 import { CiHeart } from "react-icons/ci";
 
 function ProductInfo() {
-//   const { id } = useParams(); // Get the product ID from URL parameters
-//   const [product, setProduct] = useState(null);
+  //   const { id } = useParams(); // Get the product ID from URL parameters
+  //   const [product, setProduct] = useState(null);
 
-//   useEffect(() => {
-//     // Fetch product details based on the ID
-//     const fetchProduct = () => {
-//       // Assuming categoryApi has a structure where you can get product details by ID
-//       const product = categoryApi[0].interiorItem[0].seatProduct.find(
-//         (p) => p.id === parseInt(id)
-//       );
-//       setProduct(product);
-//     };
+  //   useEffect(() => {
+  //     // Fetch product details based on the ID
+  //     const fetchProduct = () => {
+  //       // Assuming categoryApi has a structure where you can get product details by ID
+  //       const product = categoryApi[0].interiorItem[0].seatProduct.find(
+  //         (p) => p.id === parseInt(id)
+  //       );
+  //       setProduct(product);
+  //     };
 
-//     fetchProduct();
-//   }, [id]);
+  //     fetchProduct();
+  //   }, [id]);
 
-//   if (!product) {
-//     return <div>Loading...</div>;
-//   }
+  //   if (!product) {
+  //     return <div>Loading...</div>;
+  //   }
 
 
 
@@ -41,7 +41,7 @@ function ProductInfo() {
           </p>
           <button className="add-to-cart-button">Add to Cart</button>
           <button className="add-to-wishlist-button">
-            <CiHeart className="addToWishlist" /> Add to Wishlist
+            <FaRegHeart className="addToWishlist" /> Add to Wishlist
           </button>
         </div>
       </div>
